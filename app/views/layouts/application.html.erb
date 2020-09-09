@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>Flightez</title>
+    <ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">User</a></li>
+  <li><a href="contact.asp">Flights</a></li>
+  <li><a href="about.asp">Conatct</a></li>
+</ul>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +16,13 @@
   </head>
 
   <body>
-    <%= yield %>
+  <% if @current_user %>
+    <h1>Welcome <%= @current_user.name %></h1>
+    <%= link_to "Logout", logout_path %>
+  <% else %>
+    <%= link_to "Sign-Up", new_user_path %>
+    <%= link_to "Sign-In", new_login_path %>
+  <% end %>
+  <%= yield %>
   </body>
 </html>

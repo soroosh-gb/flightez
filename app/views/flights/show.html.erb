@@ -1,0 +1,14 @@
+<h1><%= @flight.destination %></h1>
+
+<h3>Available departures for this destination:</h3>
+<% @flights.all.each do |flight| %>
+    <p>City of Departure:<%= flight.departure %></p>
+    <p>Date and Time:<%= flight.datetime %></p>
+    <p>Price: $<%= flight.price %></p>
+    <p>Number of Seats:<%= flight.seats %></p>
+    <p>Flight Number:<%= flight.flight_number %></p>
+    # ^ Number of Seats or Available Number of Seats?
+    <% end %>
+
+
+

@@ -1,0 +1,13 @@
+<%= form_for @booking do |f| %>
+    
+    <p>Departure: <%= f.collection_select :flight_id, Flight.all, :id, :departure %></p>
+    <p>Destination: <%= f.collection_select :flight_id, Flight.all, :id, :destination %></p>
+    <%= f.label :seat_number %>
+    <%= f.number_field :seat_number %><br>
+
+    <%= f.submit %> 
+    
+<% end %>
+    
+    
+    

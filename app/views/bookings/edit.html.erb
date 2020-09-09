@@ -1,0 +1,11 @@
+<h1> Change seat </h1>
+
+<%= form_for @booking do |f| %>
+    <%= f.label :seat_number %>
+    <%= f.number_field :seat_number %>
+
+    <%= f.submit %>
+<% end %>
+
+<p> Do you want to cancel booking instead? </p>
+<%= button_to "Cancel Booking", booking_path(booking.user), method: :delete %>

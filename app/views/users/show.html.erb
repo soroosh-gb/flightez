@@ -1,0 +1,20 @@
+<h1> <%= @user.name%> </h1>
+
+<%= link_to "Book a flight", new_booking_path, method: :get %>
+
+<h2> My Flights </h2>
+
+ <% @user.bookings.each do |booking| %>
+    <p>Flight Number: <%= booking.flight.flight_number %></p>
+    <p>Date and Time: <%= booking.flight.datetime %></p>
+    <p>Departure: <%= booking.flight.departure %></p>
+    <p>Destination: <%= booking.flight.destination %></p>
+    <p>Seat Number: <%= booking.seat_number %></p>
+    <p>Price: <%= "$#{booking.flight.price}" %></p>
+            
+    <%= button_to "Change Seat", edit_booking_path(booking), method: :get %>
+    <br>
+    <%= button_to "Cancel Booking", booking_path(booking.user), method: :delete %>
+    <br><br>
+<% end %>
+
