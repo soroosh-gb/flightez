@@ -13,11 +13,9 @@ class BookingsController < ApplicationController
     end
 
     def create
-        # @booking = Booking.create(booking_params)
         @current_user.bookings << Booking.create(booking_params)
-
+       
         redirect_to user_path(@current_user)
-        #stuck
     end
 
     def edit
@@ -32,7 +30,6 @@ class BookingsController < ApplicationController
     end
 
     # def destroy 
-    #     # byebug
     #     @booking = Booking.find(params[:id])
     #     @booking.destroy
 

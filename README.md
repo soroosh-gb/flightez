@@ -24,13 +24,14 @@ Things you may want to cover:
 * ...
 
 
-- [] User login
-- [] User sign up
-- [] User logout
+- [X] User login
+- [X] User sign up
+- [X] User logout
+- [X] Welcome message when user is logged in
 ----------------------------------------------------
-- [] User can book a flight
-    - [] need a form (booking new.html.erb)
-    - [] where to redirect afterwards? (users show page)
+- [X] User can book a flight
+    - [X] need a form (booking new.html.erb)
+    - [X] where to redirect afterwards? (users show page)
 
 - [] User can view their bookings (user show page)    SOROOSH
     - [] add button to edit each booking (seat number)
@@ -40,9 +41,9 @@ Things you may want to cover:
     - [] create a edit form in 'booking edit.html.erb'
     - [] redirect them to the same booking show page to see the updates
 
-- [] Cancle a booking
-    - [#] in destroy action of booking controller
-    - [#] redirect to user show page
+- [] Cancle a booking (Joe)
+    - [] in destroy action of booking controller
+    - [] redirect to user show page
 
 - [] Browse available flight (erik)
     - [] create a search bar/dropdown in booking index page to search for departure and destination, each booking need to be clickable (link_to) so it takes users to a booking show page

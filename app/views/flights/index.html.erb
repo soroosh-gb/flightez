@@ -1,0 +1,7 @@
+<h1>Flights</h1>
+<h3>Check out where travelers are flying to:</h3>
+
+<% @flights.all.each do |flight| %>
+    <p>Departure: <%= flight.departure %></p>
+    <p>Destination: <%= flight.destination %></p>
+<% end %>

@@ -1,9 +1,14 @@
 <h1>Login In</h1>
 
+<% if flash.alert %>
+   <%= flash.alert %>
+<% end %>
+
+
 <%= form_for :session, url: login_path do |f| %>
 
-    <%= f.label :email_address %>
-    <%= f.text_field :email_address %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
 
     <%= f.label :password %>
     <%= f.text_field :password %>
