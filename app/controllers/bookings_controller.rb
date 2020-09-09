@@ -13,9 +13,14 @@ class BookingsController < ApplicationController
     end
 
     def create
-        @current_user.bookings << Booking.create(booking_params)
-       
-        redirect_to user_path(@current_user)
+        @booking = Booking.create(booking_params)
+        @current_user.bookings << @booking
+        if @booking.valid?
+            redirect_to user_path(@booking.user)
+        else
+            flash[:errors] = @booking.errors.full_messages
+            redirect_to new_booking_path
+        end
     end
 
     def edit
@@ -29,12 +34,12 @@ class BookingsController < ApplicationController
         redirect_to user_path(@booking.user)
     end
 
-    # def destroy 
-    #     @booking = Booking.find(params[:id])
-    #     @booking.destroy
+    def destroy 
+        @booking = Booking.find(params[:id])
+        @booking.destroy
 
-    #     redirect_to user_path(@booking.user)
-    # end 
+        redirect_to user_path(@booking.user)
+    end 
 
     private
 

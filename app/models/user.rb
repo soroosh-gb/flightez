@@ -2,10 +2,10 @@ class User < ApplicationRecord
     has_many :bookings, dependent: :destroy
     has_many :flights, through: :bookings
 
-    # validates :name, presence: true
-    # validates :email_address, presence: true
-    # validates :email_address, uniqueness: true
-    # validates :password_digest, length: {minimum: 4}
+    validates :name, presence: true
+    validates :email_address, presence: true
+    validates :email_address, uniqueness: true
+    validates :password_digest, length: {minimum: 4}
      
     has_secure_password
 

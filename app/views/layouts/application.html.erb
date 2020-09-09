@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FlightEz</title>
   <head>
-    <title>Flightez</title>
-    <ul>
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">User</a></li>
-  <li><a href="contact.asp">Flights</a></li>
-  <li><a href="about.asp">Conatct</a></li>
-</ul>
+    <% if @current_user %>
+        <h3>Welcome <%= @current_user.name %></h3>
+        <p><%= link_to "logout", logout_path, method: :delete %></p>
+    <% else %>
+       <%= link_to "Sign Up", new_user_path %>
+       <%= link_to "Sign In", new_login_path %>
+    <% end %>
+  <%= yield %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -16,13 +20,6 @@
   </head>
 
   <body>
-    <% if @current_user %>
-        <h3>Welcome <%= @current_user.name %></h3>
-        <p><%= link_to "logout", logout_path, method: :delete %></p>
-    <% else %>
-       <%= link_to "Sign-Up", new_user_path %>
-       <%= link_to "Sign-In", new_login_path %>
-    <% end %>
-  <%= yield %>
+
   </body>
 </html>
