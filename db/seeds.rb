@@ -15,7 +15,7 @@ erik = User.create(name: "Erik", email_address: "erik@email.com")
 soroosh = User.create(name: "Soroosh", email_address: "soroosh@email.com")
 joe = User.create(name: "Joe", email_address: "joek@email.com")
 
-20.times do 
+50.times do 
 Flight.create(flight_number: Faker::Number.hexadecimal(digits: 6), datetime: Faker::Time.forward(days: 150, period: :evening, format: :long), departure: Faker::Nation.capital_city, destination: Faker::Nation.capital_city, price: rand(100..400), seats: rand(1..100))
 end
 

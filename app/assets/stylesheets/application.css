@@ -19,17 +19,3 @@
   } */
   
 
-  a {
-    list-style-type: circle;
-    display: inline;
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
-
-  }
-   
-  a:hover:not(.active) {
-    background-color: #fff;
-    cursor: pointer;
-  }
-  

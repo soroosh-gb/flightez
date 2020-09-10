@@ -26,11 +26,18 @@ class Booking < ApplicationRecord
         taken_seat_numbers
     end
 
+  
     def uniq_seat_number
         if taken_seats.include? (self.seat_number)
             self.errors.add(:Seat,"is taken... Try another seat!")
         end
     end
+
+    #   def seats_left
+    #     seats = 1...100
+    #     seats.reject{|num| taken_seats.include? num}
+    #  end
+
 
 end
 
