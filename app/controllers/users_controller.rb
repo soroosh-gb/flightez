@@ -18,7 +18,7 @@ class UsersController < ApplicationController
         if @user.valid?
             session[:user_id] = @user.id
 
-            flash[:success] = "Wellcome to FlyEz, discover the world with us"
+            flash.notice = "Wellcome to FlyEz"
             redirect_to user_path(@user)
         else
             flash[:errors] = @user.errors.full_messages

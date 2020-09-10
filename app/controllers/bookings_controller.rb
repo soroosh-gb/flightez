@@ -9,12 +9,12 @@ class BookingsController < ApplicationController
     end 
 
     def new
-        @booking = Booking.new
+        @booking = @current_user.bookings.new
     end
 
     def create
-        @booking = Booking.create(booking_params)
-        @current_user.bookings << @booking
+      
+        @booking = @current_user.bookings.create(booking_params)
         if @booking.valid?
             redirect_to user_path(@booking.user)
         else
@@ -28,10 +28,13 @@ class BookingsController < ApplicationController
     end
     
     def update
-        @booking = Booking.find(params[:id])  
-        @booking.update(booking_params)
-
-        redirect_to user_path(@booking.user)
+        @booking = Booking.find(params[:id]) 
+        if @booking.update(booking_params)
+            redirect_to user_path(@booking.user)
+        else 
+            flash[:my_errors] = @booking.errors.full_messages
+            redirect_to edit_booking_path(@booking)
+        end
     end
 
     def destroy 
@@ -44,6 +47,6 @@ class BookingsController < ApplicationController
     private
 
     def booking_params
-        params.require(:booking).permit!
+        params.require(:booking).permit(:user_id, :flight_id, :seat_number)
     end
 end

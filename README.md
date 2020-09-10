@@ -46,16 +46,21 @@ Things you may want to cover:
     - [X] redirect to user show page
 
 - [] Browse available flight (erik)
-    - [] create a search bar/dropdown in booking index page to search for departure and destination, each booking need to be clickable (link_to) so it takes users to a booking show page
-    - [] in the new page, user should be able to book the flight and be redirected to user show page
+    - [X] create a search bar/dropdown in booking index page to search for departure and destination
+    - [X] in the new page, user should be able to book the flight and be redirected to user show page
     and/or
-    - [] be able to go back to booking index page and search for more flights
+    - [X] be able to go back to new booking page and search for more flights
 
 - [] *** Show only available seat number in a dropdown
+
+
+--------------------------------------------------------
+#####EXTRAS######
+- [] 
 --------------------------------------------------------------
 
 - [X] validation --> check on seat number (presence and between 0-100)
-- [] Validation ----> user cant buy the same ticket
+- [X] Validation ----> user cant buy the same ticket
 - [X] validation--> login and signup validations (name, password)
 
 -----------------------------------
