@@ -70,19 +70,19 @@ what to see where?
     - sign-in ---> user/show page
     - sign-up ---> new user form
 
-    - Pictures and destinations
+    - Pictures of destinations
 
 - [] User show page
     - welcome back note
-    - List of bookings (a picture from their destination could be nice)
-        - Edit (change seat) button for each booking  ---> Booking/edit view
-        - Cancel booking button for each booking ----> return back to user/show view
+    - [X]List of bookings (a picture from their destination could be nice)
+        -[X] Edit (change seat) button for each booking  ---> Booking/edit view
+        - [X]Cancel booking button for each booking ----> return back to user/show view
 
     - A button/link for New Booking/Book a flight ---> booking/new form
         - give them a confirmation message after booking
         - validation for selecting seat number
         - validation for unique seat number
-        - redirect to user show page after booking and show them the update
+        - [X]redirect to user show page after booking and show them the update
 
     - 
 

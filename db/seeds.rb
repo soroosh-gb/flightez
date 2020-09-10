@@ -20,8 +20,8 @@ Flight.create(flight_number: Faker::Number.hexadecimal(digits: 6), datetime: Fak
 end
 
 # seeding some Bookings to test AR relationships
-10.times do
-Booking.create(user_id: User.all.sample.id, flight_id: Flight.all.sample.id, seat_number: rand(1..100))
-end
+# 10.times do
+# Booking.create(user_id: User.all.sample.id, flight_id: Flight.all.sample.id, seat_number: rand(1..100))
+# end
 
 puts "Seeding complete!!!"

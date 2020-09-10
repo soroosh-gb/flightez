@@ -13,8 +13,9 @@ class BookingsController < ApplicationController
     end
 
     def create
-      
+        
         @booking = @current_user.bookings.create(booking_params)
+        # byebug
         if @booking.valid?
             redirect_to user_path(@booking.user)
         else
