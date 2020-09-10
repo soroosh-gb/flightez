@@ -36,6 +36,7 @@ class Booking < ApplicationRecord
     #   def seats_left
     #     seats = 1...100
     #     seats.reject{|num| taken_seats.include? num}
+    #     
     #  end
 
 

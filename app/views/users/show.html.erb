@@ -1,21 +1,25 @@
 <% if flash.notice %>
     <h2><%= flash.notice %></h2>
 <% end %>
-<%= link_to "Book a flight", new_booking_path, method: :get %>
+
+    <%# link_to "Book a flight", new_booking_path, method: :get %>
 
 <h2> My Flights </h2>
 
+
  <% @user.bookings.each do |booking| %>
+ <div class = "tix">
     <p>Flight Number: <%= booking.flight.flight_number %></p>
-    <p>Date and Time: <%= booking.flight.datetime %></p>
+    <p>Departure Date&Time: <%= booking.flight.datetime %></p>
     <p>Departure: <%= booking.flight.departure %></p>
     <p>Destination: <%= booking.flight.destination %></p>
-    <p>Seat Number: <%= booking.seat_number %></p>
     <p>Price: <%= "$#{booking.flight.price}" %></p>
-            
-    <%= button_to "Change Seat", edit_booking_path(booking), method: :get %>
-    <br>
+    <p>Seat Number: <%= booking.seat_number %> <%= button_to "Change Seat", edit_booking_path(booking), method: :get %></p>
+   
     <%= button_to "Cancel Booking", booking_path(booking), method: :delete, data: {confirm: 'Are you sure you want to cancel booking?'} %>
+
+</div>            
+    <br>
     <br><br>
 
 <% end %>

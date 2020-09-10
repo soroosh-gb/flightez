@@ -1,3 +1,16 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.tix {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tix-item {
+    display: flex;
+}

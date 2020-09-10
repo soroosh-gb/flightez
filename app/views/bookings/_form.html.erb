@@ -1,5 +1,3 @@
-<h2>Discover the world with us</h2>
-
 <% if flash[:errors] %>
     <% flash[:errors].each do |error| %>
         <%= error %><br>
@@ -21,7 +19,7 @@
 
 
 
-<%= button_to "My bookings", user_path(@booking.user), method: :get %>
+<%# button_to "My bookings", user_path(@booking.user), method: :get %>
 
     
     

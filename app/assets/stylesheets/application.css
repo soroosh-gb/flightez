@@ -18,4 +18,468 @@
     background-color: #1a53ff;
   } */
   
+/* 
+  ul.nav {
+    height: 60px;
+    margin-bottom: 0px;
+    border-bottom: 0.5px solid black;
+   }
 
+   ul.nav li {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0px 20px;
+  }
+ 
+  ul.nav li:hover {
+    
+   background-color: lightgray;
+   border-radius: 30px;
+   transition: 0.3s;
+  }
+ 
+
+ .right {
+  float: right;
+}
+
+
+.left {
+  float: left;
+} */
+
+
+
+
+
+* { 
+  box-sizing: border-box;
+}
+
+
+header h1 {
+  color: white;
+  border-bottom-style: groove;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("Travel-site.jpg");
+  background-color: #cccccc;
+  transp
+
+}
+/* Link Styles */
+
+body a {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 8px 16px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #f1e3dd;
+  font-size: 15px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+body h1 {
+  color: #667292;
+}
+
+
+
+
+
+
+
+
+
+.main-nav {
+  width: 100%;
+  min-height: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: left;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: white;
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+a:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  color: #ccc;
+}
+
+a:active {
+  border-top-color: #1b435e;
+  background: #1b435e;
+}
+
+
+header {
+  text-align: center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+header {
+  line-height: 1.5;
+}
+
+header .profile-image {
+  background-image: url("travel.jpg");
+  margin-top: 50px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid white;
+  transition: all .5s; 
+}
+
+header .profile-image:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.tag {
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+} 
+
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  padding-right: 50px;
+}
+
+footer h3 {
+  display: center;
+  color: black;
+}
+
+footer a {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 8px 16px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #f1e3dd;
+  font-size: 15px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+a.social:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  color: white;
+}
+
+a.social:active {
+  border-top-color: #1b435e;
+  background: #1b435e;
+}
+
+footer .copyright {
+  top: -8px;
+  margin-right: 20px;
+  font-size: .75em;
+  color: black;
+}
+
+
+
+
+
+
+
+.new_user {
+  color: #f1e3dd;
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
+
+  padding: 40px 40px 20px;
+  max-width: 400px;
+  margin: 50px auto 0;
+}
+
+
+* { 
+  box-sizing: border-box;
+}
+
+
+header h1 {
+  color: white;
+  border-bottom-style: groove;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("Travel-site.jpg");
+  background-color: #cccccc;
+  transp
+
+}
+/* Link Styles */
+
+body a {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 8px 16px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #f1e3dd;
+  font-size: 15px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+body h1 {
+  color: #667292;
+}
+
+
+
+
+
+
+
+
+
+.main-nav {
+  width: 100%;
+  min-height: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: left;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: white;
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+a:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  color: #ccc;
+}
+
+a:active {
+  border-top-color: #1b435e;
+  background: #1b435e;
+}
+
+
+header {
+  text-align: center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+header {
+  line-height: 1.5;
+}
+
+header .profile-image {
+  background-image: url("travel.jpg");
+  margin-top: 50px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid white;
+  transition: all .5s; 
+}
+
+header .profile-image:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.tag {
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+} 
+
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  padding-right: 50px;
+}
+
+footer h3 {
+  display: center;
+  color: black;
+}
+
+footer a {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 8px 16px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #f1e3dd;
+  font-size: 15px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+a.social:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  color: white;
+}
+
+a.social:active {
+  border-top-color: #1b435e;
+  background: #1b435e;
+}
+
+footer .copyright {
+  top: -8px;
+  margin-right: 20px;
+  font-size: .75em;
+  color: black;
+}
+
+
+
+
+
+
+
+.new_user {
+  color: #f1e3dd;
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
+
+  padding: 40px 40px 20px;
+  max-width: 400px;
+  margin: 50px auto 0;
+}
+
+.tix {
+  background-color: white;
+}
+
+.right {
+  float: right;
+}
+
+
+.left {
+  float: left;
+}

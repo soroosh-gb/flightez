@@ -66,13 +66,13 @@ Things you may want to cover:
 -----------------------------------
 what to see where?
 
-- []  session/new (main page) 
+- [X]  session/new (main page) 
     - sign-in ---> user/show page
     - sign-up ---> new user form
 
     - Pictures of destinations
 
-- [] User show page
+- [X] User show page
     - welcome back note
     - [X]List of bookings (a picture from their destination could be nice)
         -[X] Edit (change seat) button for each booking  ---> Booking/edit view
@@ -84,8 +84,29 @@ what to see where?
         - validation for unique seat number
         - [X]redirect to user show page after booking and show them the update
 
+----------------------------------------------------------------------------
+############LETS DO IT#####################
+    
+    - Header
+        - Add a header on top that holds all the buttons and fix the image issue
+        - Fix the style for  "Logout" button (functionality is right)
+        - Move "Logout" button to the right
+        - a little space between buttons could be nice
+
+    
+    - New Booking Form
+        - needs a background to be more redable
+    
+    - User Show page
+        - Work on ticket style
+
     - 
 
     
+    - Footer
+        - Move "Contact us" to the center
+        - Footer (contacts) can be lower. It is kind of in the middle now
+
+
 
 

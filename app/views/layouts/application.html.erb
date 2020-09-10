@@ -1,25 +1,52 @@
+
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>FlightEz</title>
-  <head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
     
+    <head>
+        <div class="main-nav">
+          <ul class="nav">
+      <% if @current_user %>
+          <li><h3>Welcome <%= @current_user.name %></h3></li>
+          <li><%= button_to "logout", logout_path, method: :delete %></li>
+          <%# link_to "Book a flight", new_booking_path, method: :get %>
+          <li><a href=<%= user_path(@current_user) %>>Home</a></li>
+          <li><a href=<%= new_booking_path %>>Book A Flight</a></li>
+      <% else %> 
+            <li><%= link_to "Sign Up", new_user_path %></li>
+            <li><%= link_to "Sign In", new_login_path %> </li>
+      <% end %>
+          </ul>
+        </div>
+    </head>
+     <header>
+       <img src="travel.jpg" class="profile-image"> 
+      <h1 class="tag name">Flight Ez</h1>
+        <br><br><br>
+    </header>
+  <body>
+     <%= yield %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <br>
 
-  <body>
-      <% if @current_user %>
-        <h3> <%= @current_user.name %></h3>
-        <p><%= link_to "logout", logout_path, method: :delete %></p>
-    <% else %>
-       <%= link_to "Sign Up", new_user_path %>
-       <%= link_to "Sign In", new_login_path %>
-    <% end %>
-  <%= yield %>
+  <footer>
+ 
+    <h3>Contact Us</h3> 
+      <ul>
+        <li><a href="https://github.com/zhaoerik" class="social github">Erik Zhao</a></li>
+        <li><a href="https://github.com/soroosh-gb" class="social github">Soroosh Golbabae</a></li>
+        <li><a href="https://github.com/koflerj93" class="social github">Joe Kofler</a></li>
+      </ul>
+
+      <p class="copyright">Copyright 2020, FlightEz</p>
+ </footer>
+
   </body>
+
 </html>
