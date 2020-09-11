@@ -261,6 +261,26 @@ footer .copyright {
   margin: 50px auto 0;
 }
 
+.login{
+  list-style-type: none;
+  color: #f1e3dd;
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
+
+  padding: 40px 40px 20px;
+  max-width: 400px;
+  margin: 50px auto 0;
+}
+
+
 
 * { 
   box-sizing: border-box;
@@ -313,10 +333,11 @@ body h1 {
 
 
 
-
-
-
-
+/* .top-nav {
+  height: 60px;
+  margin-bottom: 0px;
+  /* border-bottom: 0.5px solid black; */
+} */
 
 
 .main-nav {
@@ -328,11 +349,19 @@ body h1 {
 
 .nav {
   display: flex;
+  background-color: #E6E6E6;
+  height: 50px;
   justify-content: left;
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
-  padding: 0;
+  padding: 10px;
+}
+
+.nav li {
+  align-self: center;
+  display: inline-block;
+  padding: 0px 10px;
 }
 
 a {
@@ -350,6 +379,47 @@ a:active {
   border-top-color: #1b435e;
   background: #1b435e;
 }
+
+.button-delete {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 8px 16px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #f1e3dd;
+  font-size: 15px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+  
+}
+
+.button-delete {
+  color: white;
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.button-delete:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  color: #ccc;
+}
+
+.button-delete:active {
+  border-top-color: #1b435e;
+  background: #1b435e;
+}
+
 
 
 header {
@@ -387,8 +457,9 @@ header .profile-image:hover {
 
 footer {
   width: 100%;
-  min-height: 30px;
+  min-height: px;
   padding: 20px 0 40px 20px;
+  
 }
 
 footer ul {
@@ -472,7 +543,12 @@ footer .copyright {
 }
 
 .tix {
-  background-color: white;
+  background-color: #E6E6E6;
+  margin: auto;
+  border-radius: 25px;
+  width: 50% ;
+  padding: 20px;
+  opacity: 0.9;
 }
 
 .right {
@@ -483,3 +559,11 @@ footer .copyright {
 .left {
   float: left;
 }
+
+@media screen and (min-width: 720px) {
+  .flex {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }

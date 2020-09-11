@@ -24,6 +24,8 @@ class BookingsController < ApplicationController
         end
     end
 
+    
+
     def edit
         @booking = Booking.find(params[:id])
     end

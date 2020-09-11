@@ -6,7 +6,14 @@ class UsersController < ApplicationController
     end 
     
     def show 
+        if @user.no_booking == true
+            flash[:no_flight] = "You have no booking yet!"
+        else
+            flash[:no_flight] = "My Flights"
+        end 
     end 
+
+    
 
     def new
         @user = User.new
@@ -18,7 +25,7 @@ class UsersController < ApplicationController
         if @user.valid?
             session[:user_id] = @user.id
 
-            flash.notice = "Wellcome to FlyEz"
+            flash.notice = "Welcome to FlyEz"
             redirect_to user_path(@user)
         else
             flash[:errors] = @user.errors.full_messages

@@ -87,26 +87,29 @@ what to see where?
 ----------------------------------------------------------------------------
 ############LETS DO IT#####################
     
+    - Application HTML
+        - the view is not flexible
+    
     - Header
         - Add a header on top that holds all the buttons and fix the image issue
         - Fix the style for  "Logout" button (functionality is right)
         - Move "Logout" button to the right
         - a little space between buttons could be nice
 
-    
-    - New Booking Form
-        - needs a background to be more redable
-    
-    - User Show page
-        - Work on ticket style
-
-    - 
-
-    
-    - Footer
+     - Footer
         - Move "Contact us" to the center
         - Footer (contacts) can be lower. It is kind of in the middle now
 
 
+
+    - New Booking Form
+        -[X] needs a background to be more redable
+    
+    - User Show page
+        -[X] Work on ticket style (soroosh)
+        -[X] if user have no flight tell them! 
+
+    
+   
 
 

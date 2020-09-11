@@ -5,7 +5,7 @@ class User < ApplicationRecord
     validates :name, presence: true
     # validates :email_address, presence: true
     # validates :email_address, uniqueness: true
-    validates :password_digest, length: {minimum: 4}
+    validates :password, presence: true
      
     has_secure_password
 
@@ -14,5 +14,8 @@ class User < ApplicationRecord
     #  self.password_digest = pw
     # end 
 
+    def no_booking
+        self.flights.empty?
+    end
 
 end

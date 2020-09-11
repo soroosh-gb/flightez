@@ -1,4 +1,4 @@
-<h3> Pick your seat </h3>
+
 
 <% if flash[:my_errors] %>
     <% flash[:my_errors].each do |error| %>
@@ -6,9 +6,12 @@
     <% end %>
 <% end %>
 
+<div class = "form_background">
+<h3> Pick your seat </h3>
 <%= form_for @booking do |f| %>
         <p>Seat Number: <%= f.select :seat_number, (1..100).map {|i| [i,i] } %></p>
     <%= f.submit %>
 <% end %>
 <br>
 <%= button_to "My bookings", user_path(@booking.user), method: :get %>
+</div>

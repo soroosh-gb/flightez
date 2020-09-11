@@ -4,13 +4,16 @@
    <%= flash.alert %>
 <% end %>
 
-<%= form_for :session, url: login_path do |f| %>
+<ul class = "login">
 
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+  <%= form_for :session, url: login_path do |f| %>
 
-    <%= f.label :password %>
-    <%= f.text_field :password %>
+   <li><%= f.label :name %></li>
+    <li><%= f.text_field :name %></li>
+  
+    <li><p><%= f.label :password %></li>
+    <li><%= f.text_field :password %></p></li>
 
-<%= f.submit %>
+    <br><p><%= f.submit %></p>
 <% end %>
+</ul>

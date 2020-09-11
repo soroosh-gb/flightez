@@ -8,15 +8,16 @@
     <% flash[:success] %>
 <% end %>
 
+<div class = "form_background">
 <%= form_for @booking do |f| %>
     
     <p>Departing from: <%= f.collection_select :flight_id, Flight.all, :id, :departure %></p>
     <p>Going to: <%= f.collection_select :flight_id, Flight.all, :id, :destination %></p>
-    <p>Seat Number: <%= f.select :seat_number, (1..100).map {|i| [i,i] } %></p>
+    <p>Seat Number: <%= f.select :seat_number, (1..56).map {|i| [i,i] } %></p>
     <p><%= f.submit %> </p>
     
 <% end %>
-
+</div>
 
 
 <%# button_to "My bookings", user_path(@booking.user), method: :get %>

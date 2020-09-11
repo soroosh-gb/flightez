@@ -7,11 +7,11 @@
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
     
     <head>
-        <div class="main-nav">
+        <div class="top-nav">
           <ul class="nav">
       <% if @current_user %>
           <li><h3>Welcome <%= @current_user.name %></h3></li>
-          <li><%= button_to "logout", logout_path, method: :delete %></li>
+          <li><%= button_to "Log Out", logout_path, :method => :delete, :class => "button-delete" %></li>
           <%# link_to "Book a flight", new_booking_path, method: :get %>
           <li><a href=<%= user_path(@current_user) %>>Home</a></li>
           <li><a href=<%= new_booking_path %>>Book A Flight</a></li>
@@ -37,7 +37,7 @@
 
   <footer>
  
-    <h3>Contact Us</h3> 
+    
       <ul>
         <li><a href="https://github.com/zhaoerik" class="social github">Erik Zhao</a></li>
         <li><a href="https://github.com/soroosh-gb" class="social github">Soroosh Golbabae</a></li>

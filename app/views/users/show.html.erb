@@ -3,11 +3,12 @@
 <% end %>
 
     <%# link_to "Book a flight", new_booking_path, method: :get %>
-
-<h2> My Flights </h2>
-
+<div class = "form_background">
+<h2><%= flash[:no_flight] %></h2>
+</div> <br><br>
 
  <% @user.bookings.each do |booking| %>
+
  <div class = "tix">
     <p>Flight Number: <%= booking.flight.flight_number %></p>
     <p>Departure Date&Time: <%= booking.flight.datetime %></p>

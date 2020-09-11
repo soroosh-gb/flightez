@@ -1,19 +1,20 @@
 
 <% if flash[:errors] %>
     <% flash[:errors].each do |error| %>
-        <%= error %><br>
+        <h4><%= error %></h4>
     <% end %>
 <% end %>
 <br>
 
+
 <%=form_for @user do |f| %>
 
-<p><%= f.label "Name:"%>
-<%= f.text_field :name %></p>
+<p><%= f.label "Name:"%></p>
+<p><%= f.text_field :name %></p>
 
 
-<p><%= f.label "Password:"%>
-<%= f.text_field :password %></p>
+<p><%= f.label "Password:"%></p>
+<p><%= f.text_field :password %></p>
 <br>
 <%= f.submit %>
 <% end %>
